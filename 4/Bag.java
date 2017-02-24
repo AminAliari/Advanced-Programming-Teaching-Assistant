@@ -34,7 +34,7 @@ public class Bag {
         }
     }
 
-    public ArrayList<BagItem> getObjects () { // it's a function with return type of a dynamic array
+    public ArrayList<BagItem> getItems () { // it's a function with return type of a dynamic array
         return bagItems;
     }
 
@@ -53,7 +53,7 @@ abstract class BagItem {
     public abstract void use(); // an abstract function doesn't have a body so it has to be implemented in children class
 
     public void drop() { // not everything has to be abstract in a abstract class
-        System.out.println(getName + " has been dropped from bag. [weight: " + getWeight() + "]");
+        System.out.println(getName() + " has been dropped from bag. [weight: " + getWeight() + "]");
     }
 
     public String getName() {
